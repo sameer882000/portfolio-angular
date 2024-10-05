@@ -13,3 +13,16 @@ h5 {
     color: #007bff;
     /* Accent color */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h5 {
+        font-size: 1.3rem;
+        /* Smaller font size for smaller screens */
+    }
+
+    .badge {
+        margin-top: 10px;
+        /* Additional space above badges for mobile */
+    }
+}
