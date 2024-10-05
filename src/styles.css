@@ -1,0 +1,31 @@
+/* General Body */
+body {
+    background-color: #F8F9FA;
+    font-family: 'Poppins', sans-serif;
+    color: #343A40;
+    line-height: 1.6;
+}
+
+h2 {
+    font-weight: 600;
+    color: #007BFF;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

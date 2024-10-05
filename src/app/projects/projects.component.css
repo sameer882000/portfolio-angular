@@ -1,0 +1,34 @@
+#projects {
+    padding: 60px 0;
+    background-color: #F8F9FA;
+}
+
+#projects .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive cards */
+@media (max-width: 768px) {
+    #projects .project-card {
+        margin-bottom: 30px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project-card {
+    animation: fadeIn 1s ease forwards;
+}

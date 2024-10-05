@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding-top: 56px;
+    /* Space for fixed navbar */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Remove bullets from navbar list */
+.navbar-nav {
+    list-style: none;
+    /* No bullet points */
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    /* Center nav items vertically */
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px;
+    /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00d1b2;
+}
+
+/* Responsive navbar */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack vertically on small screens */
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+        /* Adjust padding for stacked items */
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Sticky footer for short pages */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
