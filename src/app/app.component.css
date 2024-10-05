@@ -65,14 +65,39 @@ body {
     }
 }
 
-/* Footer styles */
 footer {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 0;
+    
     width: 100%;
-    position: relative;
     bottom: 0;
+    position: fixed;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0054d1;
 }
 
 /* Sticky footer for short pages */
