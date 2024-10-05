@@ -17,4 +17,11 @@ export class AppComponent {
       navbarToggler.setAttribute('aria-expanded', 'false');
     }
   }
+
+    downloadResume() {
+    const link = document.createElement('a');
+    link.href = 'assets/resume.pdf'; // Path to your resume
+    link.download = 'Sameer_Resume.pdf'; // Name for the downloaded file
+    link.click(); // Programmatically click the link
+  }
 }
