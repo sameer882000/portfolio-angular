@@ -20,15 +20,15 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class ProjectsComponent implements OnInit {
   projects = [
     {
-      title: 'Task Manager App',
-      description: 'A task management tool built with Angular and Firebase.',
-      link: 'https://your-link-to-task-manager.com'
+      title: 'Notes App',
+      description: 'A responsive web application for managing notes, built with the MEAN stack (MongoDB, Express.js, Angular, Node.js), featuring CRUD operations, timestamps, and an intuitive user interface.',
+      link: 'https://notes-app-tau-five-81.vercel.app/'
     },
-    {
-      title: 'E-commerce Website',
-      description: 'An online store with shopping cart and payment gateway integration.',
-      link: 'https://your-link-to-ecommerce.com'
-    }
+    // {
+    //   title: 'E-commerce Website',
+    //   description: 'An online store with shopping cart and payment gateway integration.',
+    //   link: 'https://your-link-to-ecommerce.com'
+    // }
   ];
 
   constructor() { }
