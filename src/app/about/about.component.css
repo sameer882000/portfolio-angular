@@ -1,5 +1,5 @@
 #about {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 #about h2 {
@@ -18,16 +18,294 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-    #about h2 {
-        font-size: 2rem;
+
+.about {
+    background-color: #1e1e1e;
+    /* Dark gray background */
+    color: #e0e0e0;
+    /* Light text color */
+    padding: 50px 0;
+    /* Add vertical padding */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); */
+    /* Subtle shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+.about h3 {
+    font-size: 2.5rem;
+    /* Larger font size for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    color: #a36cb3;
+    /* Light purple for the heading */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    /* Text shadow for depth */
+}
+
+.about img {
+    border: 4px solid #a36cb3;
+    /* Light purple border around the image */
+    transition: transform 0.3s;
+    /* Smooth scale transition */
+}
+
+.about img:hover {
+    transform: scale(1.1);
+    /* Scale effect on hover */
+}
+
+.about p {
+    font-size: 1.2rem;
+    /* Font size for the paragraph */
+    line-height: 1.6;
+    /* Increased line height for readability */
+}
+
+/* Dark mode styles for About section */
+.intro-text,
+.highlight-name,
+.lead {
+    opacity: 0;
+    /* Start fully transparent */
+    animation: fadeIn 1s ease forwards;
+    /* Fade-in effect */
+}
+
+.intro-text {
+    font-size: 2rem !important;
+    /* Smaller size for intro text */
+    color: #ffffff;
+    /* Light purple for "Hi, I'm" */
+    margin: 0;
+    margin-bottom: 10px;
+    /* Space below intro text */
+}
+
+.highlight-name {
+    font-size: 3.5rem;
+    /* Large size for the name */
+    font-weight: bold;
+    color: #a36cb3;
+    /* Light purple color */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    margin-bottom: 10px;
+    /* Space below name */
+}
+
+.lead {
+    font-size: 1.2rem;
+    /* Font size for lead text */
+    line-height: 1.6;
+    /* Increased line height for readability */
+    margin: 30px 0;
+    /* Space above and below */
+    color: #e0e0e0;
+    /* Light text color */
+}
+
+/* Underline effect for the name */
+.highlight-name::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #6f5d9c;
+    /* Underline color */
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* Smooth transition for underline */
+}
+
+.highlight-name:hover::after {
+    transform: scaleX(1);
+    /* Underline effect on hover */
+}
+
+/* Unified Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
 
-    #about p {
-        font-size: 1rem;
-    }
-
-    #about img {
-        max-width: 100px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+/* See My Work Button */
+.btn-see-my-work {
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 15px 30px;
+    /* Padding for the button */
+    font-size: 1.2rem;
+    /* Font size for the button */
+    font-weight: bold;
+    /* Font weight for the button */
+    color: #ffffff;
+    /* Button text color */
+    background: linear-gradient(135deg, #8a2be2, #5a3e8c);
+    /* Gradient background */
+    border-radius: 50px;
+    /* Rounded corners */
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 1px;
+    /* Spacing between letters */
+    position: relative;
+    /* Relative positioning */
+    overflow: hidden;
+    /* Hide overflow */
+    cursor: pointer;
+    /* Pointer cursor */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition */
+    box-shadow: 0 0 20px rgba(163, 108, 179, 0.8), 0 0 30px rgba(163, 108, 179, 0.6);
+    /* Shadow effect */
+}
+
+/* Border Glow Effect */
+.btn-see-my-work::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    /* Full width of button */
+    height: 200%;
+    /* Full height of button */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+    /* Radial gradient */
+    border-radius: 50px;
+    /* Rounded corners */
+    opacity: 0;
+    /* Start fully transparent */
+    transition: opacity 0.4s, transform 0.4s;
+    /* Smooth transition */
+}
+
+.btn-see-my-work:hover::before {
+    opacity: 0.2;
+    /* Increase opacity on hover */
+    transform: scale(1);
+    /* Scale effect on hover */
+}
+
+/* Shimmer Overlay */
+.btn-see-my-work::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Position at the top */
+    left: -100%;
+    /* Start from the left */
+    width: 200%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    /* Shimmer effect */
+    transition: left 0.7s ease;
+    /* Smooth transition */
+    border-radius: 50px;
+    /* Rounded corners */
+}
+
+.btn-see-my-work:hover::after {
+    left: 100%;
+    /* Move shimmer to the right on hover */
+}
+
+.btn-see-my-work:hover {
+    color: #eaeaea;
+    /* Change text color on hover */
+    transform: scale(1.07) translateY(-4px);
+    /* Scale and slight lift effect */
+    box-shadow: 0 0 25px rgba(163, 108, 179, 0.9), 0 0 35px rgba(90, 62, 140, 0.7), 0 0 45px rgba(163, 108, 179, 0.5);
+    /* Enhanced shadow on hover */
+}
+
+/* Text Glow */
+.btn-see-my-work span {
+    position: relative;
+    /* Relative positioning for span */
+    display: inline-block;
+    /* Inline-block display */
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    /* Neon glow animation */
+}
+
+/* Keyframes for Text Neon Pulse */
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    to {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 768px) {
+    .about {
+        padding: 100px 0;
+        height: 100vh;
+        /* Increase padding on small screens */
+    }
+
+    .about h1 {
+        margin-bottom: 70px;
+        font-size: 70px;
+        /* Increase space below heading */
+    }
+
+    .about p {
+        margin-bottom: 40px;
+        font-size: 25px !important;
+        /* Increase space below paragraphs */
+    }
+
+    .btn-see-my-work {
+        margin-top: 50px;
+        padding: 15px 25px;
+        /* Adjust button padding */
+        font-size: 1.1rem;
+        /* Adjust button font size */
+    }
+}
+
+@media (min-width: 769px) {
+    .about {
+        padding: 50px 0;
+       
+        /* Default padding for larger screens */
+    }
+
+    .about h3 {
+        margin-bottom: 20px;
+        /* Default space below heading */
+    }
+
+    .about p {
+        margin-bottom: 20px;
+        /* Default space below paragraphs */
+    }
+
+    .btn-see-my-work {
+        margin-top: 50px;
+        padding: 15px 30px;
+        /* Default button padding */
+        font-size: 1.2rem;
+        /* Default button font size */
+    }
+}
+

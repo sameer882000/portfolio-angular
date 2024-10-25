@@ -1,13 +1,27 @@
-<section id="projects" class="py-4">
-  <div class="container" style=" background-color: #F8F9FA;">
-    <h3 class="text-center mb-3">Projects</h3>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let project of projects">
-        <div class="card shadow-sm project-card" [@fadeAnimation]>
+<section id="projects" class="projects pt-5">
+  <div class="container">
+    <br>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-md-8" *ngFor="let project of projects">
+        <div class="card project-card mb-4">
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">{{ project.description }}</p>
-            <a [href]="project.link" target="_blank" class="btn btn-outline-primary">View Project</a>
+
+            <!-- Tools Used Section with Font Awesome Icons -->
+            <div class="tools-used my-3">
+              <h6>Tools Used:</h6>
+              <div class="tools-icons">
+                <i *ngFor="let tool of project.tools" [class]="tool.icon" [title]="tool.name" aria-hidden="true" ></i>
+              </div>
+            </div>
+
+            <!-- Buttons Section -->
+            <div class="button-group">
+              <a [href]="project.link" target="_blank" class="btn btn-launch">Launch</a>
+              <a [href]="project.source" target="_blank" class="btn btn-source">Source Code</a>
+            </div>
           </div>
         </div>
       </div>

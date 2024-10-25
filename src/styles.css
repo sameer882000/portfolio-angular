@@ -1,10 +1,12 @@
 /* General Body */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #F8F9FA;
-    font-family: 'Poppins', sans-serif;
-    color: #343A40;
     line-height: 1.6;
+    font-family: 'Carlito',sans-serif !important;
 }
 
 h2 {
