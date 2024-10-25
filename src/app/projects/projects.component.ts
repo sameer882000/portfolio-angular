@@ -19,17 +19,6 @@ import { trigger, style, animate, transition } from '@angular/animations';
 })
 export class ProjectsComponent  {
   projects = [
-      {
-      title: 'Weather App',
-     description: 'A user-friendly weather application built with Angular and TypeScript that provides real-time weather updates by fetching data from the OpenWeatherMap API. Users can easily check current weather conditions and view a detailed hourly forecast for any city across the globe.',
-      link: 'https://weather-app-cyan-mu-31.vercel.app/',
-      source: 'https://github.com/sameer882000/weather-app',
-        tools: [
-      { name: 'Angular', icon: 'fab fa-angular' },
-      { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap' },
-      { name: 'OpenWeatherMap API', icon: 'fa-solid fa-cloud' },
-    ]
-    },
     {
       title: 'Notes App',
       description: 'A responsive web application for managing notes, built with the MEAN stack (MongoDB, Express.js, Angular, Node.js), featuring CRUD operations, timestamps, and an intuitive user interface with secure authentication.',
@@ -54,6 +43,17 @@ export class ProjectsComponent  {
       { name: 'Node.js', icon: 'fab fa-node-js' },
       { name: 'Express.js', icon: 'fas fa-server' },
       { name: 'MongoDB', icon: 'fas fa-database' }
+    ]
+    },
+          {
+      title: 'Weather App',
+     description: 'A user-friendly weather application built with Angular and TypeScript that provides real-time weather updates by fetching data from the OpenWeatherMap API. Users can easily check current weather conditions and view a detailed hourly forecast for any city across the globe.',
+      link: 'https://weather-app-cyan-mu-31.vercel.app/',
+      source: 'https://github.com/sameer882000/weather-app',
+        tools: [
+      { name: 'Angular', icon: 'fab fa-angular' },
+      { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap' },
+      { name: 'OpenWeatherMap API', icon: 'fa-solid fa-cloud' },
     ]
     },
 

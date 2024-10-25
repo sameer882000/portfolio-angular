@@ -86,7 +86,7 @@
     font-size: 3.5rem;
     /* Large size for the name */
     font-weight: bold;
-    color: #a36cb3;
+    color: #2b89ae;
     /* Light purple color */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     margin: 0;
@@ -111,7 +111,7 @@
     display: block;
     width: 100%;
     height: 4px;
-    background: #6f5d9c;
+    background: #38353f;
     /* Underline color */
     position: absolute;
     bottom: -5px;

@@ -6,7 +6,7 @@
 
 .section-title {
     font-size: 2.5rem;
-    color: #a36cb3;
+    color: #5c80ce;
     margin-bottom: 1.5rem;
 }
 
@@ -26,7 +26,7 @@
 
 .card-title {
     font-size: 1.8rem;
-    color: #a36cb3;
+    color: #5c80ce;
 }
 
 .card-text {
@@ -113,7 +113,7 @@
 
 .tools-icons i {
     font-size: 1.5rem;
-    color: #a36cb3;
+    color: #6ca2b3;
     transition: color 0.3s ease;
 }
 
