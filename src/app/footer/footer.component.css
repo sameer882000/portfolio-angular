@@ -1,5 +1,7 @@
 .footer {
     background-color: #1e1e1e;
+    bottom: 0;
+    width: 100%;
     /* Dark background for the footer */
     padding: 20px 0;
     /* Padding for the footer */
