@@ -68,7 +68,7 @@ body {
     color: #e0e0e0;
     /* Light text color */
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 12px;
     /* Margin between links */
     font-size: 18px;
     /* Font size */
@@ -125,3 +125,32 @@ body {
         /* Adjust font size */
     }
 }
+
+.theme-toggle {
+    background: none;
+        border: none;
+        width: 24px;
+        /* Fixed width for consistent layout */
+        font-size: 1.3rem;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.theme-toggle i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle i.fa-moon {
+    /* transform: rotate(-20deg); */
+    /* Just for style */
+}
+
+.theme-toggle i.fa-sun {
+    color: #ffb400;
+    /* Sun yellow color */
+}
+
