@@ -35,7 +35,9 @@
     margin-bottom: 1rem;
 }
 
+
 /* Tools Used Styling */
+
 .tools-used {
     color: #a36cb3;
 }
@@ -45,6 +47,7 @@
     gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    color: white;
 }
 
 .tool-icon {
@@ -58,7 +61,9 @@
     opacity: 1;
 }
 
+
 /* Buttons Styling */
+
 .button-group {
     display: flex;
     justify-content: space-around;
@@ -66,7 +71,9 @@
     margin-top: 15px;
 }
 
+
 /* Buttons Styling */
+
 .btn-launch {
     color: #ffffff;
     /* White text color */
@@ -121,3 +128,12 @@
     color: #e0e0e0;
 }
 
+.tool-icon {
+    width: 24px;
+    /* Set appropriate size */
+    height: 24px;
+    margin-right: 8px;
+    /* Space between icons */
+    display: inline-block;
+    /* To align them properly */
+}
