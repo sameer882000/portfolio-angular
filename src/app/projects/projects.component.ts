@@ -17,7 +17,7 @@ import { ThemeService } from '../theme.service';
   ],
 })
 export class ProjectsComponent {
-  isDarkMode: boolean = false;
+  isDarkMode: boolean = true;
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {
