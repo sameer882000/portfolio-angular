@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  constructor(private meta: Meta) {}
   
   isDarkMode = false;
   title = 'portfolio-angular';
 
     ngOnInit() {
+      this.meta.updateTag({ name: 'description', content: 'This is my portfolio showcasing projects and skills as a Full Stack Developer.' });
     const savedMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
     this.isDarkMode = savedMode;
     if (this.isDarkMode) {
