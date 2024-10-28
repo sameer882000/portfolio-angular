@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { injectSpeedInsights } from '@vercel/speed-insights';
+import { inject } from "@vercel/analytics"
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
 export class AppComponent {
   constructor(private meta: Meta) {
     injectSpeedInsights();
+    inject();
   }
   
   isDarkMode = false;
