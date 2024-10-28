@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,9 @@ import { Meta } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta) {
+    injectSpeedInsights();
+  }
   
   isDarkMode = false;
   title = 'portfolio-angular';
