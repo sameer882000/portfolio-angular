@@ -5,11 +5,13 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class ThemeService {
-  isDarkMode = true; // Default theme
-  public isDarkModeSubject = new BehaviorSubject<boolean>(true); // Default theme
+  isDarkMode = true; 
+  public isDarkModeSubject = new BehaviorSubject<boolean>(true); 
   isDarkMode$ = this.isDarkModeSubject.asObservable();
+
   constructor() {
-    this.loadTheme(); // Load theme from localStorage on init
+    this.loadTheme(); 
+    
   }
 
   toggleTheme() {
