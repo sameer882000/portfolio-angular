@@ -257,29 +257,34 @@
 /* Responsive spacing adjustments */
 @media (max-width: 768px) {
     .about {
-        padding: 100px 0;
+        padding: 80px 0;
         height: 100vh;
         /* Increase padding on small screens */
     }
 
     .about h1 {
         margin-bottom: 70px;
-        font-size: 70px;
+        font-size: 60px;
         /* Increase space below heading */
     }
 
     .about p {
         margin-bottom: 40px;
-        font-size: 25px !important;
+        font-size: 20px !important;
         /* Increase space below paragraphs */
     }
 
+    .intro-text, .highlight-name, .lead {
+        /* font-size: 1.5rem !important; */
+        margin-top : 40px;
+    }
+
     .btn-see-my-work {
-        margin-top: 50px;
-        padding: 15px 25px;
-        /* Adjust button padding */
-        font-size: 1.1rem;
-        /* Adjust button font size */
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        /* Smaller padding and font size */
+        display: inline-block;
     }
 }
 
@@ -301,10 +306,10 @@
     }
 
     .btn-see-my-work {
-        margin-top: 50px;
-        padding: 15px 30px;
+        margin-top: 30px;
+        /* padding: 15px 30px; */
         /* Default button padding */
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         /* Default button font size */
     }
 }

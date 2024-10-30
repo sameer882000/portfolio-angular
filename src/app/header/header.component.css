@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
 }
@@ -28,7 +27,7 @@ body {
     max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; /* Center all content within header */
     align-items: center;
 }
 
@@ -40,13 +39,16 @@ body {
 
 .nav {
     display: flex;
+    justify-content: center; /* Center nav items within nav */
+    flex: 1;
+    max-width: 600px; /* Limit width for better control on large screens */
+    gap: 20px;
 }
 
 .nav a,
 .nav button {
     color: #e0e0e0;
     text-decoration: none;
-    margin: 0 12px;
     font-size: 18px;
     position: relative;
     transition: color 0.3s;
@@ -54,6 +56,7 @@ body {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    text-align: center;
 }
 
 .nav a::after,
@@ -79,6 +82,12 @@ body {
     left: 0;
 }
 
+@media (min-width: 769px) {
+    .header {
+        justify-content: center; /* Ensure header content is centered */
+    }
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
     .header {
@@ -89,9 +98,17 @@ body {
         font-size: 20px;
     }
 
+    .header-content {
+        padding: 10px 20px;
+    }
+
     .nav a,
     .nav button {
         font-size: 16px;
+    }
+
+    .nav {
+        gap: 10px; /* Reduce gap on small screens */
     }
 }
 
