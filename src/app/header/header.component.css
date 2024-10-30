@@ -5,152 +5,144 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    /* Use a modern font */
     background-color: #121212;
-    /* Dark background for body */
     color: #e0e0e0;
-    /* Light text color */
 }
 
 .header {
     position: fixed;
     width: 100%;
-    /* Make it sticky */
     top: 0;
-    /* Stick to the top */
     background: #1c1c1c;
-    /* Dark background */
     color: #e0e0e0;
-    /* Light text color */
     padding: 20px 50px;
-    /* Add padding */
     display: flex;
     justify-content: space-between;
-    /* Space out elements */
     align-items: center;
-    /* Center items vertically */
     transition: background-color 0.3s ease;
-    /* Smooth transition for background */
     z-index: 1000;
-    /* Ensure it's above other content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for depth */
 }
 
 .header-content {
     max-width: 1200px;
-    /* Limit content width */
     width: 100%;
-    /* Full width */
     display: flex;
-    /* Flexbox for layout */
     justify-content: space-evenly;
-    /* Space out elements */
     align-items: center;
-    /* Center items vertically */
 }
 
 .logo {
     font-size: 24px;
-    /* Logo size */
     font-weight: bold;
-    /* Bold text */
     letter-spacing: 1px;
-    /* Spacing between letters */
 }
 
 .nav {
     display: flex;
-    /* Flexbox for navigation */
 }
 
-.nav a {
+.nav a,
+.nav button {
     color: #e0e0e0;
-    /* Light text color */
     text-decoration: none;
     margin: 0 12px;
-    /* Margin between links */
     font-size: 18px;
-    /* Font size */
     position: relative;
-    /* Positioning for effect */
     transition: color 0.3s;
-    /* Smooth color transition */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.nav a::after {
+.nav a::after,
+.nav button::after {
     content: '';
     position: absolute;
-    /* Absolute positioning for underline */
     left: 50%;
-    /* Center the line */
     bottom: -5px;
-    /* Position below text */
     width: 0;
-    /* Start with no width */
     height: 2px;
-    /* Height of the underline */
     background: #a36cb3;
-    /* Gold color for the underline */
     transition: width 0.3s ease, left 0.3s ease;
-    /* Smooth transition */
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav button:hover {
     color: #b782e6;
-    /* Change text color on hover */
 }
 
-.nav a:hover::after {
+.nav a:hover::after,
+.nav button:hover::after {
     width: 100%;
-    /* Expand the underline */
     left: 0;
-    /* Move it to the left */
 }
 
-/* Add media query for responsiveness */
+/* Responsiveness */
 @media (max-width: 768px) {
     .header {
         padding: 10px 20px;
-        /* Adjust padding */
     }
 
     .logo {
         font-size: 20px;
-        /* Adjust logo size */
     }
 
-    .nav a {
+    .nav a,
+    .nav button {
         font-size: 16px;
-        /* Adjust font size */
     }
 }
 
 .theme-toggle {
     background: none;
-        border: none;
-        width: 24px;
-        /* Fixed width for consistent layout */
-        font-size: 1.3rem;
-        color: var(--text-color);
-        cursor: pointer;
-        transition: color 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    border: none;
+    width: 24px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .theme-toggle i {
     font-size: 1.3rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.theme-toggle i.fa-moon {
-    /* transform: rotate(-20deg); */
-    /* Just for style */
-}
+.theme-toggle i.fa-moon {}
 
 .theme-toggle i.fa-sun {
     color: #ffb400;
-    /* Sun yellow color */
 }
 
+.resume-link {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.resume-link:hover {
+    color: #b782e6;
+}
+
+.resume-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #a36cb3;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.resume-link:hover::after {
+    width: 100%;
+    left: 0;
+}

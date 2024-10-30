@@ -88,6 +88,10 @@ body.light-mode .nav a {
     color: black !important;
 }
 
+body.light-mode .resume-link {
+    color: black !important;
+}
+
 body.light-mode .nav a:hover {
     color: #6c63ff;
 }

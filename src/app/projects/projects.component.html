@@ -1,17 +1,15 @@
-<section id="projects" class="projects pt-5">
+<section id="projects" class="projects">
     <div class="container">
-        <br>
-        <br>
         <div class="row justify-content-center">
             <div class="col-md-8" *ngFor="let project of projects">
                 <div class="card project-card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">{{ project.title }}</h5>
+                      <div class="card-title">{{ project.title }}</div>
                         <p class="card-text">{{ project.description }}</p>
 
                         <!-- Tools Used Section with Inline SVGs -->
                         <div class="tools-used my-3">
-                            <h6>Tools Used:</h6>
+                            <div class="tools" >Tools Used:</div>
                             <div class="tools-icons">
                                 <ng-container *ngFor="let tool of project.tools">
                                     <span title="{{ tool.name }}" aria-hidden="true" class="tool-icon">

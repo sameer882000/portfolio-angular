@@ -137,3 +137,7 @@
     display: inline-block;
     /* To align them properly */
 }
+
+.tools {
+font-size: 1.1rem;
+}
