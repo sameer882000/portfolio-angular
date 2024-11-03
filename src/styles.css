@@ -173,12 +173,12 @@ body.light-mode .tools-icons i:hover {
 
 /* Buttons Styling in Light Mode */
 body.light-mode .btn-launch {
-    background-color: #4a90e2;
+    background-color: #085C8C;
     color: #ffffff;
 }
 
 body.light-mode .btn-launch:hover {
-    background-color: #3a78d4;
+    background-color: #005E94;
 }
 
 body.light-mode .btn-source {
