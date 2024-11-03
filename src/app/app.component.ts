@@ -19,7 +19,7 @@ export class AppComponent {
 
     ngOnInit() {
       this.meta.updateTag({ name: 'description', content: 'This is my portfolio showcasing projects and skills as a Full Stack Developer.' });
-    const savedMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
+    const savedMode = JSON.parse(localStorage.getItem('darkMode') || 'true');
     this.isDarkMode = savedMode;
     if (this.isDarkMode) {
       document.body.classList.add('dark-mode');
