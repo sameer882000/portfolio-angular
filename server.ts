@@ -31,7 +31,7 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    res.set('X-Robots-Tag', 'index, follow'); // Allow indexing
+    res.set('x-robots-tag', 'index, follow'); // Allow indexing
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
