@@ -1,0 +1,81 @@
+.contact-section {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px; /* Add padding to the top and bottom */
+    padding-left: 15px; /* Add padding to the left */
+    padding-right: 15px; /* Add padding to the right */
+}
+
+.contact-title {
+    font-size: 1.7em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #2a69d0, #1e3c72, #2a69d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-title:hover {
+    transform: scale(1.05);
+}
+
+.contact-intro {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.contact-links {
+    display: flex;
+    /* flex-wrap: wrap; Allow wrapping of items */
+    justify-content: center;
+    gap: 20px; /* Adjust gap between items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    transition: color 0.3s, transform 0.3s;
+    flex-basis: calc(50% - 10px); /* Set each item to take 50% minus gap for two items in a row */
+    max-width: 200px; /* Set a max width for better control */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.contact-item i {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.contact-item a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+}
+
+.contact-item a:hover {
+    color: #5d9cec; /* Cyan for link hover */
+    text-decoration: underline;
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.8em; /* Reduce title size for smaller screens */
+    }
+
+    .contact-intro {
+        font-size: 1em; /* Reduce intro text size */
+    }
+
+    .contact-item {
+        flex-basis: 100%; /* Make each item take full width */
+    }
+}

@@ -3,13 +3,13 @@
     bottom: 0;
     width: 100%;
     /* Dark background for the footer */
-    padding: 20px 0;
+    padding: 10px 0;
     /* Padding for the footer */
     position: relative;
     /* Allow normal positioning */
     color: #e0e0e0;
     /* Light text color */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); */
     /* Shadow for depth */
 }
 
@@ -57,19 +57,3 @@
     /* Scale effect on hover */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center items */
-        text-align: center;
-        /* Center text */
-    }
-
-    .social-links {
-        margin-top: 10px;
-        /* Add space above social links */
-    }
-}

@@ -68,8 +68,19 @@ body.dark-mode .nav a {
     color: #e0e0e0;
 }
 
+body.dark-mode .contact-item a {
+    color: #e0e0e0;
+}
+
+
+
 body.dark-mode .nav a:hover {
     color: #b782e6;
+}
+
+body.light-mode .contact-section {
+        background-color: #f9f9f9;
+        color: #333333;
 }
 
 /* Light Mode Styles */
@@ -85,6 +96,10 @@ body.light-mode .header {
 }
 
 body.light-mode .nav a {
+    color: black !important;
+}
+
+body.light-mode .contact-section a {
     color: black !important;
 }
 
@@ -196,7 +211,7 @@ body.light-mode .footer {
     /* Light background for the footer */
     color: #333333;
     /* Dark text color */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
     /* Lighter shadow */
 }
 
