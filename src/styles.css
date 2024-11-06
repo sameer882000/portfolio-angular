@@ -220,6 +220,11 @@ body.light-mode .footer-text {
     /* Dark text color */
 }
 
+body.light-mode .footer-source {
+    color: #333333;
+    /* Dark text color */
+}
+
 body.light-mode .social-links a {
     color: #333333 !important;
     /* Dark text color for icons */

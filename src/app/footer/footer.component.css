@@ -34,6 +34,11 @@
     /* Adjust font size for readability */
 }
 
+.footer-source {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
 .social-links {
     display: flex;
     gap: 15px;
