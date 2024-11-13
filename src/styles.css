@@ -229,3 +229,10 @@ body.light-mode .social-links a:hover {
     color: #4a90e2;
     /* Change to a blue shade on hover */
 }
+
+
+body.light-mode .footer-source {
+    color: #333333;
+    /* Dark text color */
+}
+

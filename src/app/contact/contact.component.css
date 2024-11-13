@@ -1,81 +1,156 @@
+/* Dark Mode */
 .contact-section {
     text-align: center;
     background-color: #1e1e1e;
-    padding: 20px; /* Add padding to the top and bottom */
-    padding-left: 15px; /* Add padding to the left */
-    padding-right: 15px; /* Add padding to the right */
+    padding: 30px;
+    transition: background-color 0.3s ease;
 }
 
-.contact-title {
-    font-size: 1.7em;
+.contact-title { 
+    font-size: 1.5em;
     font-weight: bold;
-    background: linear-gradient(135deg, #2a69d0, #1e3c72, #2a69d0);
+    /* Refined gradient with softer transitions */
+    background: linear-gradient(135deg, #5d9cec, #4179c0, #2a69d0, #1f4a7e, #5d9cec);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: inline-block;
+    padding: 5px 10px;
     transition: transform 0.3s ease;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
 }
+
+
 
 .contact-title:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
+
+
+
 .contact-intro {
-    font-size: 1.1em;
-    color: var(--text-color);
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
 }
 
 .contact-links {
     display: flex;
-    /* flex-wrap: wrap; Allow wrapping of items */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust gap between items */
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     font-size: 1em;
-    transition: color 0.3s, transform 0.3s;
-    flex-basis: calc(50% - 10px); /* Set each item to take 50% minus gap for two items in a row */
-    max-width: 200px; /* Set a max width for better control */
-    box-sizing: border-box; /* Include padding in width calculations */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 180px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Dark mode background */
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-item i {
-    font-size: 22px;
-    margin-right: 8px;
+    font-size: 24px;
+    color: #5d9cec;
+    margin-right: 10px;
+    transition: color 0.3s;
 }
 
 .contact-item a {
     color: #e0e0e0;
     text-decoration: none;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
 .contact-item:hover {
+    background: rgba(93, 156, 236, 0.2);
     transform: translateY(-2px);
 }
 
 .contact-item a:hover {
-    color: #5d9cec; /* Cyan for link hover */
-    text-decoration: underline;
+    color: #5d9cec;
+}
+
+.contact-item i:hover {
+    color: #e0e0e0;
+}
+
+/* Light Mode */
+body.light-mode .contact-section {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+body.light-mode .contact-title {
+    background: linear-gradient(180deg, #6a5acd, #9370db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+body.light-mode .contact-title::after {
+    background: linear-gradient(90deg, #6a5acd, #9370db);
+}
+
+body.light-mode .contact-intro {
+    color: #333333;
+}
+
+body.light-mode .contact-item {
+    background: rgba(103, 85, 219, 0.2); /* Light mode background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .contact-item i {
+    color: #6a5acd;
+}
+
+body.light-mode .contact-item:hover {
+    background: rgba(106, 90, 205, 0.2);
+    transform: translateY(-2px);
+}
+
+body.light-mode .contact-item a {
+    color: #333333;
+}
+
+body.light-mode .contact-item a:hover {
+    color: #6a5acd;
+}
+
+body.light-mode .contact-item i:hover {
+    color: #333333;
 }
 
 /* Media query for small screens */
 @media (max-width: 480px) {
     .contact-title {
-        font-size: 1.8em; /* Reduce title size for smaller screens */
+        font-size: 1.8em;
     }
 
     .contact-intro {
-        font-size: 1em; /* Reduce intro text size */
+        font-size: 1em;
+    }
+
+    .contact-links {
+        flex-direction: column;
     }
 
     .contact-item {
-        flex-basis: 100%; /* Make each item take full width */
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
     }
 }
