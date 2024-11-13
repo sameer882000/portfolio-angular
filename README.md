@@ -1,27 +1,36 @@
-# PortfolioAngular
+### Portfolio - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+Welcome to my personal portfolio built with Angular!
 
-## Development server
+This repository contains the source code for my portfolio website, where I showcase my projects, skills, and experience as a full-stack developer.
+### Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsive Design**: Optimized for both small and large screens.
+- **Dark/Light Mode Toggle**: Switch between themes easily.
+- **Project Showcase**: Highlights the tools and technologies used in each project.
+- **Accessibility**: Designed with accessibility for all users in mind.
 
-## Code scaffolding
+### Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/sameer882000/portfolio-angular.git
+2.  **Install dependencies**
+    ```bash
+    npm install
+3.  **Run locally**
+    ```bash
+    ng serve
+Your portfolio will be available at http://localhost:4200/.
 
-## Build
+### Tech Stack
+Frontend: Angular, TypeScript, HTML, CSS
+Icons: FontAwesome
+Deployment: Vercel
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Check out the live version of my portfolio:
+[My Portfolio](https://sameer-sinha.vercel.app/)
 
-## Running unit tests
+Lighthouse Scores
+![Screenshot 2024-11-13 203952](https://github.com/user-attachments/assets/f79a22be-0a03-43c3-abaf-9ecfb3b979ad)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
