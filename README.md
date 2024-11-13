@@ -31,6 +31,6 @@ Deployment: Vercel
 Check out the live version of my portfolio:
 [My Portfolio](https://sameer-sinha.vercel.app/)
 
-Lighthouse Scores
+### Lighthouse Score
 ![Screenshot 2024-11-13 203952](https://github.com/user-attachments/assets/f79a22be-0a03-43c3-abaf-9ecfb3b979ad)
 
