@@ -5,11 +5,6 @@
       <a href="#projects">My Works</a>
       <a href="#contact">Contact</a>
       
-      <!-- Resume download button -->
-      <button class="resume-link" (click)="downloadResume()" aria-label="Download Resume">
-        Resume
-      </button>
-
       <!-- Theme toggle button with an icon -->
       <button class="theme-toggle" (click)="themeService.toggleTheme()" aria-label="Toggle Theme">
         <i [ngClass]="themeService.isDarkMode ? 'fas fa-moon' : 'fas fa-sun'"></i>

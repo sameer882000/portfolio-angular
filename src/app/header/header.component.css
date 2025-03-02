@@ -130,8 +130,4 @@ body {
     .nav button {
         font-size: 16px;
     }
-
-    .nav {
-        gap: 10px;
-    }
 }

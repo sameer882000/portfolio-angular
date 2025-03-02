@@ -12,10 +12,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.themeService.applyTheme(); // Apply saved theme on load
   }
-downloadResume() {
-    const link = document.createElement('a');
-    link.href = 'assets/resume.pdf'; // Path to your resume
-    link.download = 'Sameer_Resume.pdf'; // Name for the downloaded file
-    link.click(); // Programmatically click the link
-  }
+
 }
